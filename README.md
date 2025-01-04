@@ -5,4 +5,4 @@
 
 
 Usage:
-||what||
+`loadstring(game.HttpService:GetAsync("urlblahblah.com",false))()`
