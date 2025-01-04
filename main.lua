@@ -13,6 +13,7 @@ local TextButton_2 = Instance.new("TextButton")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local TextButton_3 = Instance.new("TextButton")
 local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
 
 --Properties:
 
@@ -23,8 +24,8 @@ Frame.Active = true
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.060498219, 0, 0.0777777806, 0)
-Frame.Size = UDim2.new(0.408422321, 0, 0.622222245, 0)
+Frame.Position = UDim2.new(0.060498219, 0, 0.077777788, 0)
+Frame.Size = UDim2.new(0.39418745, 0, 0.886373222, 0)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
@@ -66,6 +67,7 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.0966919586, 0, 0.523868024, 0)
 ScrollingFrame.Size = UDim2.new(0.791538179, 0, 0.383950651, 0)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
 
 TextButton_3.Parent = ScrollingFrame
 TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 87, 247)
@@ -93,23 +95,36 @@ TextButton_4.TextScaled = true
 TextButton_4.TextSize = 14.000
 TextButton_4.TextWrapped = true
 
+TextButton_5.Parent = ScrollingFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(72, 255, 52)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.112999998, 0, 0.57099998, 0)
+TextButton_5.Size = UDim2.new(0.790748179, 0, 0.171193436, 0)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "outline char parts"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
 -- Scripts:
 
-local function QQUVBLA_fake_script() -- TextButton.panic 
+local function QAWQ_fake_script() -- TextButton.panic 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.Activated:Connect(function() 
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(QQUVBLA_fake_script)()
-local function ZIUKJA_fake_script() -- Frame.drag 
+coroutine.wrap(QAWQ_fake_script)()
+local function DGJHRCL_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(ZIUKJA_fake_script)()
-local function OKYGXU_fake_script() -- TextButton_2.panic 
+coroutine.wrap(DGJHRCL_fake_script)()
+local function ENNW_fake_script() -- TextButton_2.panic 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.Activated:Connect(function() 
@@ -130,16 +145,16 @@ local function OKYGXU_fake_script() -- TextButton_2.panic
 		coroutine.resume(Rejoin)
 	end)
 end
-coroutine.wrap(OKYGXU_fake_script)()
-local function VZCBFK_fake_script() -- TextButton_3.panic 
+coroutine.wrap(ENNW_fake_script)()
+local function RTQN_fake_script() -- TextButton_3.panic 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.Activated:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(VZCBFK_fake_script)()
-local function EIWN_fake_script() -- TextButton_4.panic 
+coroutine.wrap(RTQN_fake_script)()
+local function WWJRIZ_fake_script() -- TextButton_4.panic 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.Activated:Connect(function() 
@@ -153,8 +168,21 @@ local function EIWN_fake_script() -- TextButton_4.panic
 		end
 	end)
 end
-coroutine.wrap(EIWN_fake_script)()
-local function GNCWVG_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(WWJRIZ_fake_script)()
+local function LAJWV_fake_script() -- TextButton_5.panic 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.Activated:Connect(function() 
+		local plr = game.Players.LocalPlayer
+		local character = plr.Character
+		while true do
+			character:WaitForChild("HumanoidRootPart").CFrame = character.HumanoidRootPart.CFrame * CFrame.fromEulerAnglesXYZ(0,0.05,0)
+			task.wait()
+		end
+	end)
+end
+coroutine.wrap(LAJWV_fake_script)()
+local function KMPXE_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	function randomString()
@@ -170,4 +198,4 @@ local function GNCWVG_fake_script() -- ScreenGui.LocalScript
 	
 	script.Parent.Name = randomString()
 end
-coroutine.wrap(GNCWVG_fake_script)()
+coroutine.wrap(KMPXE_fake_script)()
