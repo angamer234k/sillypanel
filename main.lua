@@ -12,6 +12,7 @@ local UIGradient = Instance.new("UIGradient")
 local TextButton_2 = Instance.new("TextButton")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
 
 --Properties:
 
@@ -23,7 +24,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.060498219, 0, 0.0777777806, 0)
-Frame.Size = UDim2.new(0.358600259, 0, 0.449999988, 0)
+Frame.Size = UDim2.new(0.408422321, 0, 0.622222245, 0)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
@@ -63,8 +64,8 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0.0959312171, 0, 0.51028806, 0)
-ScrollingFrame.Size = UDim2.new(0, 239, 0, 100)
+ScrollingFrame.Position = UDim2.new(0.0966919586, 0, 0.523868024, 0)
+ScrollingFrame.Size = UDim2.new(0.791538179, 0, 0.383950651, 0)
 
 TextButton_3.Parent = ScrollingFrame
 TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 87, 247)
@@ -79,23 +80,36 @@ TextButton_3.TextScaled = true
 TextButton_3.TextSize = 14.000
 TextButton_3.TextWrapped = true
 
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(100, 48, 255)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.112999998, 0, 0.270999998, 0)
+TextButton_4.Size = UDim2.new(0.790748179, 0, 0.171193436, 0)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "outline char parts"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
 -- Scripts:
 
-local function MXYI_fake_script() -- TextButton.panic 
+local function QQUVBLA_fake_script() -- TextButton.panic 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.Activated:Connect(function() 
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(MXYI_fake_script)()
-local function OLJCLF_fake_script() -- Frame.drag 
+coroutine.wrap(QQUVBLA_fake_script)()
+local function ZIUKJA_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(OLJCLF_fake_script)()
-local function MIVGQQ_fake_script() -- TextButton_2.panic 
+coroutine.wrap(ZIUKJA_fake_script)()
+local function OKYGXU_fake_script() -- TextButton_2.panic 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.Activated:Connect(function() 
@@ -116,16 +130,31 @@ local function MIVGQQ_fake_script() -- TextButton_2.panic
 		coroutine.resume(Rejoin)
 	end)
 end
-coroutine.wrap(MIVGQQ_fake_script)()
-local function SIIUI_fake_script() -- TextButton_3.panic 
+coroutine.wrap(OKYGXU_fake_script)()
+local function VZCBFK_fake_script() -- TextButton_3.panic 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.Activated:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(SIIUI_fake_script)()
-local function MBADSST_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(VZCBFK_fake_script)()
+local function EIWN_fake_script() -- TextButton_4.panic 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.Activated:Connect(function() 
+		local plr = game.Players.LocalPlayer
+		local character = plr.Character
+		for _,v in ipairs(character:GetChildren()) do
+			local outline = Instance.new("SelectionBox")
+			outline.Adornee = v
+			outline.Parent = v
+			outline.LineThickness =  0.05
+		end
+	end)
+end
+coroutine.wrap(EIWN_fake_script)()
+local function GNCWVG_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	function randomString()
@@ -141,4 +170,4 @@ local function MBADSST_fake_script() -- ScreenGui.LocalScript
 	
 	script.Parent.Name = randomString()
 end
-coroutine.wrap(MBADSST_fake_script)()
+coroutine.wrap(GNCWVG_fake_script)()
