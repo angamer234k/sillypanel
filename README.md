@@ -5,4 +5,4 @@
 
 
 Usage:
-`loadstring(game.HttpService:GetAsync("urlblahblah.com",false))()`
+`loadstring(game.HttpService:GetAsync("https://raw.githubusercontent.com/angamer234k/sillypanel/refs/heads/main/main.lua",false))()`
