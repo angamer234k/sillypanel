@@ -3,6 +3,7 @@
 
 -- Instances:
 
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
@@ -16,7 +17,9 @@ local TextButton_5 = Instance.new("TextButton")
 
 --Properties:
 
-Frame.Parent = game.StarterGui.ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
 Frame.Active = true
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -107,21 +110,21 @@ TextButton_5.TextWrapped = true
 
 -- Scripts:
 
-local function IOFQW_fake_script() -- TextButton.panic 
+local function FSWPCR_fake_script() -- TextButton.panic 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.Activated:Connect(function() 
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(IOFQW_fake_script)()
-local function RFHKA_fake_script() -- Frame.drag 
+coroutine.wrap(FSWPCR_fake_script)()
+local function JLWH_fake_script() -- Frame.drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(RFHKA_fake_script)()
-local function NGTVRA_fake_script() -- TextButton_2.panic 
+coroutine.wrap(JLWH_fake_script)()
+local function FKPFY_fake_script() -- TextButton_2.panic 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.Activated:Connect(function() 
@@ -142,16 +145,16 @@ local function NGTVRA_fake_script() -- TextButton_2.panic
 		coroutine.resume(Rejoin)
 	end)
 end
-coroutine.wrap(NGTVRA_fake_script)()
-local function NYLAH_fake_script() -- TextButton_3.panic 
+coroutine.wrap(FKPFY_fake_script)()
+local function FEACZJL_fake_script() -- TextButton_3.panic 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.Activated:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(NYLAH_fake_script)()
-local function KDWUQT_fake_script() -- TextButton_4.panic 
+coroutine.wrap(FEACZJL_fake_script)()
+local function ESRZNP_fake_script() -- TextButton_4.panic 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.Activated:Connect(function() 
@@ -165,8 +168,8 @@ local function KDWUQT_fake_script() -- TextButton_4.panic
 		end
 	end)
 end
-coroutine.wrap(KDWUQT_fake_script)()
-local function DPJDSVG_fake_script() -- TextButton_5.panic 
+coroutine.wrap(ESRZNP_fake_script)()
+local function DZUJD_fake_script() -- TextButton_5.panic 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.Activated:Connect(function() 
@@ -178,4 +181,21 @@ local function DPJDSVG_fake_script() -- TextButton_5.panic
 		end
 	end)
 end
-coroutine.wrap(DPJDSVG_fake_script)()
+coroutine.wrap(DZUJD_fake_script)()
+local function CBKM_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	function randomString()
+		local length = math.random(10,20)
+		local array = {}
+		for i = 1, length do
+			array[i] = string.char(math.random(32, 126))
+		end
+		return table.concat(array)
+	end
+	
+	
+	
+	script.Parent.Name = randomString()
+end
+coroutine.wrap(CBKM_fake_script)()
